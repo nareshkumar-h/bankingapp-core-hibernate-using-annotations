@@ -12,13 +12,13 @@ public class TestUserDAO {
 
 	public static void main(String[] args) {
 
-		// registerUser();
+		 registerUser();
 		// login();
-		findOne();
-		listUsers();
-		 updateUser();
+		//findOne();
+		//listUsers();
+		 //updateUser();
 
-		deleteUser();
+		//deleteUser();
 	}
 
 	private static void listUsers() {

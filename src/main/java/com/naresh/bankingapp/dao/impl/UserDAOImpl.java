@@ -50,10 +50,7 @@ public class UserDAOImpl implements UserDAO {
 		Session sess = sf.openSession();
 		User user = null;
 		try {
-
-			sess.beginTransaction();
 			user = sess.get(User.class, userId);
-			sess.getTransaction().commit();
 		} catch (HibernateException e) {
 			throw new DBException("Unable to fetch user", e);
 		} finally {
